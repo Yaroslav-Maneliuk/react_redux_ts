@@ -26,6 +26,7 @@ const TodoList: React.FC = () => {
           <div
             onClick={() => setTodoPage(p)}
             style={{ border: p === page ? "2px solid green" : "1px solid gray", padding: 10 }}
+            key={p.toString()}
           >
             {p}
           </div>)}
